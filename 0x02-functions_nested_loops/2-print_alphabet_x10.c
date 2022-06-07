@@ -3,18 +3,21 @@
 /**
  * print_alphabet_x10 - This program prints alphabets 10 times
  * Description: To print alphabets
- * Return: Always void
+ * Return: Nothing.
  */
 void print_alphabet_x10(void)
 {
-	int time, count;
+	char c = 'a';
+	int i = 0;
 
-	for (time = 1; time <= 10; time++)
+	for (; i < 10; i++)
 	{
-		for (count = 97; count <= 122; count++)
+		while (c <= 'z')
 		{
-			putchar(count);
+			_putchar(c);
+			c++;
 		}
-		putchar(count);
+		c = 'a';
+		_putchar ('\n');
 	}
 }
