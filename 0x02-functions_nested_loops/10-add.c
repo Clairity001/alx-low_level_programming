@@ -2,13 +2,12 @@
 #include <stdio.h>
 /**
  * main - check the code
- * Return: Always 0
+ * Return: The result
  */
 int main(void)
 {
-	int n;
-
-	n = sum(89, 9);
-	printf("%d\n", n);
-	return (0);
+	int add(int n, int m);
+	{
+		return (n + m);
+	}
 }
