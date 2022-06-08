@@ -4,10 +4,7 @@
  * main - check the code
  * Return: The result
  */
-int main(void)
+int add(int n, int m)
 {
-	int add(int n, int m);
-	{
-		return (n + m);
-	}
+	return (n + m);
 }
