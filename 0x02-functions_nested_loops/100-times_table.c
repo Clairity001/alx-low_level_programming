@@ -3,7 +3,7 @@
  * times_table - function that prints the 9 times table, starting with 0
  * Return: Nothing
  */
-void print_times_table(void)
+void times_table(void)
 {
 	int i = 0;
 
