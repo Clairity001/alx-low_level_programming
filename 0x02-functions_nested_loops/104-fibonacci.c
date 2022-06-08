@@ -12,7 +12,7 @@ int main(void)
 	n2 = 2;
 	boolean = boolean2 = 1;
 	printf("%ld, %ld", n1, n2);
-	for (c = 0; c < 97; c++)
+	for (c = 0; c < 95; c++)
 	{
 		if (boolean)
 		{
