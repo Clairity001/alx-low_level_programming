@@ -3,12 +3,12 @@
  * _isupper - evaluates if letter is uppercase
  * Description: prints the alphabet with _putchar
  * @c: input character
- * Return: 1 if is an uppercase characetr, 0 in other case
+ * Return: Always 0
  */
 
 int _isupper(int c)
 {
-	if (c >= 65 && <= 90)
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
