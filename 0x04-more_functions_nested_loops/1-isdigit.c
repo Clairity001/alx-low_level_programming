@@ -4,6 +4,7 @@
  * @c: inputs number
  * Return: 1 if it is a number (0 to 9), 0 in other case
  */
+
 int_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
