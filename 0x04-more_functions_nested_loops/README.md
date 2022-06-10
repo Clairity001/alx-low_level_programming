@@ -1,1 +1,1 @@
-My 0x04-more_functions_nested_loops
+a function that prints the numbers, from 0 to 9, followed by a new line
