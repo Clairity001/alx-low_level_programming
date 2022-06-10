@@ -3,9 +3,10 @@
  * _isupper: checks upper case
  * @c: print1 or 0
  */
+
 int _isupper(int c)
 {
-	if (C >= 'A' && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
@@ -13,4 +14,3 @@ int _isupper(int c)
 	{
 		return (0);
 	}
-}
