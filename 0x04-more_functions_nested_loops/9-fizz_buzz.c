@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * main - Entry point
  * Description: FizzBuzz test
@@ -6,28 +7,31 @@
  */
 int main(void)
 {
-	int n;
+	int x = 1;
 
-	for (n = 1; n <= 100; n++)
+	while (x < 101)
 	{
-		if (n % 3 == 0 && n % 5 == 0)
+		if (x % 3 == 0 && x % 5 == 0)
 		{
 			printf("%s", "FizzBuzz");
 		}
-		else if (n % 3 == 0)
+		else if (x % 3 == 0)
 		{
 			printf("%s", "Fizz");
 		}
-		else if (n % 5 == 0)
+		else if (x % 5 == 0)
 		{
 			printf("%s", "Buzz");
 		}
 		else
 		{
-			printf("%i", n);
+			printf("%d", x);
 		}
-		if (n != 100)
-		printf(" ");
+		if (x != 100)
+		{
+			printf(" ");
+		}
+		x++;
 	}
 	printf("\n");
 	return (0);
