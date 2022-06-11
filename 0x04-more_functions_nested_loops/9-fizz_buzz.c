@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * main - Entry point
- *
  * Description: FizzBuzz test
  * Return: void
  */
@@ -28,7 +27,7 @@ int main(void)
 			printf("%i", n);
 		}
 		if (n != 100)
-			printf(" ");
+		printf(" ");
 	}
 	printf("\n");
 	return (0);
