@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_triangle - This method prints triangle
  * @size: the size of the triangle
@@ -8,20 +7,22 @@
  */
 void print_triangle(int size)
 {
-	int row, col, space, s;
+	int i, x, space;
 
-	space = size - 1;
-	for (row = 1; row <= size; row++)
+	for (i = 0; i < size; i++)
 	{
-		for (s = 1; s <= space; s++)
+		for (space = size - 1; space > 0; space--)
 		{
 			_putchar(' ');
 		}
-		for (col = 1; col <= row; col++)
+		for (x = 0; x <= i; x++)
 		{
 			_putchar('#');
 		}
 		_putchar('\n');
-		space--;
+	}
+	if (size <= 0)
+	{
+		_putchar('\n');
 	}
 }
