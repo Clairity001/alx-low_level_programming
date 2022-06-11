@@ -6,24 +6,22 @@
  * Description: to print triangle
  * Return: void
  */
-
 void print_triangle(int size)
 {
 	int row, col, space, s;
 
 	space = size - 1;
-
-		for (row = 1; row <= size; row++)
+	for (row = 1; row <= size; row++)
+	{
+		for (s = 1; s <= space; s++)
 		{
-			for (s = 1; s <= space; s++)
-			{
-				_putchar('');
-			}
-			for (col = 1; col <= row; col++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-			space--;
+			_putchar(' ');
 		}
+		for (col = 1; col <= row; col++)
+		{
+			_putchar('#');
+		}
+		_putchar('\n');
+		space--;
+	}
 }
