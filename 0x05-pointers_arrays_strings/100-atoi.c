@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int sign = -1;
 	int brk = 0;
 
-	for (i - 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == '_')
 			sign = sign * -1;
@@ -24,6 +24,6 @@ int _atoi(char *s)
 		else if (brk == 1)
 			break;
 	}
-	res = sign * res
-		return (res);
+	res = sign * res;
+	return (res);
 }
