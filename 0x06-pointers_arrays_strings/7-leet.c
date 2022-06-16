@@ -3,31 +3,25 @@
 /**
  * leet - This functions encode some chars
  *
- * @ptr: This function encodes some chars
- * Return: char
+ * @x: This function encodes some chars
+ * Return: a string
  */
-char *leet(char, *ptr)
+char *leet(char *x)
 {
-	int count, len;
+	int a = 0, b, l = 5;
+	char tr[5] = {'A', 'E', 'O', 'T', 'L'};
+	char trw[5] = {'4', '3', '0', '7', '1'};
 
-	len = 0;
+	while (x[a])
+	{
+		b = 0;
 
-	while (*(ptr + len) != '\0')
-	{
-		len++;
+		while (b < l)
+		{
+			if (x[a] == tr[b] || x[a] - 32 == tr[b])
+				x[a] = trw[b];
+			b++;
+		}
+		a++;
 	}
-	for (count = 0; count <= len; count++)
-	{
-		if (*(ptr + count) == 'a' || *(ptr + count) == 'A')
-			*(ptr + count) = '4';
-		if (*(ptr + count) == 'e' || *(ptr + count) == 'E')
-			*(ptr + count) = '3';
-		if (*(ptr + count) == 'o' || *(ptr + count) == 'O')
-			*(ptr + count) = '0';
-		if (*(ptr + count) == 't' || *(ptr + count) == 'T')
-			*(ptr + count) = '7';
-		if (*(ptr + count) == 'l' || *(ptr + count) == 'L')
-			*(ptr + count) = '1';
-	}
-	return (ptr);
-}
+	return (x);
