@@ -1,9 +1,12 @@
 #include "main.h"
+
 /**
- * print_number - print a number using _putchar
- * @n: the number to be printed
- * Return: void
+ * print_number - This function prints integers using putchar
+ * @n: The numbers to get printed in the console
+ *
+ * Return: nothing to the main
  */
+
 void print_number(int n)
 {
 	unsigned int m, d, count;
@@ -17,6 +20,7 @@ void print_number(int n)
 	{
 		m = n;
 	}
+
 	d = m;
 	count = 1;
 
@@ -25,6 +29,7 @@ void print_number(int n)
 		d /= 10;
 		count *= 10;
 	}
+
 	for (; count >= 1; count /= 10)
 	{
 		_putchar(((m / count) % 10) + 48);
