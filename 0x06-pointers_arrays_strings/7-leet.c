@@ -6,8 +6,7 @@
  * @ptr: This function encodes some chars
  * Return: char
  */
-
-char *leet(char *ptr)
+char *leet(char, *ptr)
 {
 	int count, len;
 
