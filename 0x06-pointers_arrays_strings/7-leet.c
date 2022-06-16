@@ -18,6 +18,7 @@ char *leet(char *s)
 			if (s[i] == array_low[j] || s[i] == array_up[j])
 				s[i] = array_leet[j];
 		}
+		i++;
 	}
 	return (s);
 }
