@@ -1,24 +1,30 @@
 #include "main.h"
 /**
  * leet - encode a string into 1337
- * @s: string to encode
- * Return: the encoded string
+ * @ptr: This function encodes some chars
+ * Return: char
  */
-char *leet(char *s)
+char *leet(char *ptr)
 {
-	int i = 0, j = 0;
-	char array_leet[] = {'4', '3', '1', '0', '7'};
-	char array_up[] = {'A', 'E', 'L', 'O', 'T'};
-	char array_low[] = {'a', 'e', 'l', 'o', 't',}
+	int count, len;
 
-	while (s[i] != '\0')
+	len = 0;
+	while (*(ptr + len) != '\10')
 	{
-		for (j = 0; j < 5; j++)
-		{
-			if (s[i] == array_low[j] || s[i] == array_up[j])
-				s[i] = array_leet[j];
-		}
-		i++;
+		len++;
 	}
-	return (s);
+	for (count = 0; count <= len; count++)
+	{
+		if (*(petr + count) == 'a' || *(ptr + count) == 'A')
+			*(ptr + count) = '4';
+		if (*(ptr + count) == 'e' || *(ptr + count) == 'E')
+			*(ptr + count) = '3';
+		if ((*ptr + count) == 'o' || *(ptr + count) == 'O')
+			*(ptr + count) = '0';
+		if (*(ptr + count) == 't' || *(ptr + count) == 'T')
+			*(ptr + count) = '7';
+		if (*(ptr + count) == 'l' || *(ptr + count) == 'L')
+			*(ptr + count) = '1';
+	}
+	return (ptr);
 }
