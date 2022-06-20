@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
  * _strstr - this function locates a substring
- * @haystack: the pointer to the main string
- * @needle: the pointer to the substring
- * Return: the string pointer should be returned
+ * @haystack: The pointer to the main string
+ * @needle: The pointer to the substring
+ * Return: The string pointer should be returned
  */
+
 char *_strstr(char *haystack, char *needle)
 {
 	char *bhaystack;
@@ -15,13 +17,14 @@ char *_strstr(char *haystack, char *needle)
 		bhaystack = haystack;
 		pneedle = needle;
 
-		while (*hastack != '\0' && *pneedle != '\0' && *haystack == *pneedle)
-		{
-			haystack++;
-			pneedle++;
-		}
+
+		while (*haystack != '\0' && *pneedle != '\0' && *haystack == *pneedle)
+	{
+		haystack++;
+		pneedle++;
+	}
 		if (!*pneedle)
-		return (bahaystack);
+		return (bhaystack);
 		haystack = bhaystack + 1;
 	}
 	return (0);
