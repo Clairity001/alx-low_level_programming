@@ -1,1 +1,1 @@
-a function that copies memory area
+a function that gets the length of a prefix substring.
