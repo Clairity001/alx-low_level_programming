@@ -1,1 +1,1 @@
-a function that prints the chessboard
+a function that sets the value of a pointer to a char.
