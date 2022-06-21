@@ -1,7 +1,9 @@
 #include "main.h"
+
 /**
- * print_chessboard - this function prints the chessboard
- * @a: the pointer to the array
+ * print_chessboard - This function prints the chessboard
+ * @a: The pointer to the array
+ *
  * Return: void
  */
 void print_chessboard(char (*a)[8])
@@ -16,4 +18,5 @@ void print_chessboard(char (*a)[8])
 		}
 		putchar('\n');
 	}
+
 }
