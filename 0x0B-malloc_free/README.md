@@ -1,1 +1,1 @@
-This is all about dynamic memory allocation
+a function that concatenates all the arguments of your program.
